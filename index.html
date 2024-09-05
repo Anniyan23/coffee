@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Date Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Would you like to go on a coffee date?</h1>
+        
+        <!-- Doraemon image -->
+        <img src="https://www.transparentpng.com/thumb/doraemon/yCVGQg-doraemon-wonderful-picture-images.png" alt="Doraemon" class="doraemon" />
+
+        <div class="button-container">
+            <button id="yesBtn">Yes!</button>
+            <button id="noBtn">No way!</button>
+        </div>
+
+        <!-- Dropdown initially hidden -->
+        <div id="dropdown" class="dropdown hidden">
+            <label for="places">Choose a place:</label>
+            <select id="places">
+                <option value="wildsugar">Choose your place</option>
+                <option value="wildsugar">Wild Sugar</option>
+                <option value="hotelwelcome">Hotel Welcome</option>
+            </select>
+        </div>
+
+        <!-- 'Oh nice!' button, initially hidden -->
+        <button id="niceBtn" class="hidden">Oh nice!</button>
+
+        <!-- Message after 'Oh nice!' button is clicked -->
+        <p id="message" class="hidden"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <img src="https://www.transparentpng.com/thumb/doraemon/yCVGQg-doraemon-wonderful-picture-images.png" alt="Doraemon" class="doraemon" /> -->
+

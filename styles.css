@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffeb99;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 400px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px #ff6f61;
+    word-wrap: break-word;
+}
+
+/* Doraemon Image */
+.doraemon {
+    width: 150px;
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.doraemon:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#yesBtn {
+    background-color: #28a745;
+}
+
+#noBtn {
+    background-color: #dc3545;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+#dropdown, #niceBtn {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+#message {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+/* No button escape animation */
+@keyframes moveAround {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(50px, -20px);
+    }
+    50% {
+        transform: translate(-40px, 30px);
+    }
+    75% {
+        transform: translate(30px, -50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .doraemon {
+        width: 120px;
+    }
+}
