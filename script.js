@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show message after "Oh nice!" button is clicked
     niceBtn.addEventListener("click", function () {
         const selectedPlace = places.value;
-        message.textContent = `Let's meet at ${selectedPlace === 'wildsugar' ? 'Wild Sugar' : 'Hotel Welcome'} in coming October. See you soon, take care!`;
+        message.textContent = `Let's meet at ${selectedPlace === 'Mathura' ? 'Mathura','Darjeeling' ? 'Darjeeling',
+                                               'Manali' ? 'Manali',' Andaman & Nicobar Islands ' ? ' Andaman & Nicobar Islands ','Munnar' ? 'Munnar',
+                                               'Coorg' ? 'Coorg'
+                                               : 'Kuduremukha'} in coming October. See you soon, take care!`;
         message.classList.remove("hidden");
     });
 
