@@ -22,11 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show message after "Oh nice!" button is clicked
     niceBtn.addEventListener("click", function () {
         const selectedPlace = places.value;
-        message.textContent = `Let's meet at ${selectedPlace === 'Mathura' ? 'Mathura','Darjeeling' ? 'Darjeeling',
-                                               'Manali' ? 'Manali',' Andaman & Nicobar Islands ' ? ' Andaman & Nicobar Islands ','Munnar' ? 'Munnar',
-                                               'Coorg' ? 'Coorg'
-                                               : 'Kuduremukha'} in coming October. See you soon, take care!`;
-        message.classList.remove("hidden");
+        if (selectedPlace !== "select") {
+            message.textContent = `Let's meet at ${selectedPlace} in coming October. See you soon, take care!`;
+            message.classList.remove("hidden");
+
+            // Hide the "Oh nice!" button and dropdown
+            niceBtn.classList.add("hidden");
+            dropdown.classList.add("hidden");
+        }
     });
 
     // Move the "No" button when hovered or clicked
